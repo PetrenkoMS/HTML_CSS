@@ -1,0 +1,120 @@
+
+.gold {
+color: #FF00FF;
+}
+
+body {
+    qqbackground-color: #E0F0F0;
+    background-image: url("../img/kotik.png");
+    background-repeat: no-repeat;
+    background-color: #E0F0F0;
+    background-position: center;
+    color: #000000;
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-sizzzze: 20px; <!--для ошибки, чтобы посмотреть через f12 в браузере. Можно исправить в браузере, но не обновлять)-->
+    }
+
+.div2 {
+    margin: 40px 40px;
+    }
+
+.textDiv2 {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+h1 {
+    font-size: 45px;
+    color: #3F3FD9;
+    font-family: Impact;
+    }
+
+h6 {
+    font-size: 12px;
+    }
+
+.titleOfNum {
+    font-size: 16px;
+    }
+
+.titleOfLittleNum {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    }
+
+.num {
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+.cat {
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 10px #000000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2E416B;
+
+    }
+
+.foto {
+    display: block;
+    width: 400px;
+    height: 230px;
+    margin: 0px auto;
+    border-radius: 15%;
+    color: red;
+    }
+
+.textCat {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1;
+    color: #E1D0D0;
+    }
+
+.but1 {
+    height: 70px;
+    display: block;
+    background-color: black;
+    margin: 0px auto;
+}
+
+div.wrapper {
+    width:1400px;
+    height: 320px;
+
+    }
+div.left_block {
+    float:left;
+    width:400px;
+    height: 300px;
+    }
+div.right_block {
+    float:right;
+    width:400px;
+    height: 300px;
+    background-color: #E0F0F0;
+    border: 4mm ridge #54E736;
+    display: inline-block;
+    }
+
+.history {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#find_text {
+    padding-top: 5px;
+    weight: 24px;
+    height: 24px;
+}
+.input_text {
+    width:  330px;
+    height: 30px;
+}

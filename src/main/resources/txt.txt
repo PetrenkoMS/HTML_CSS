@@ -1,0 +1,9 @@
+function myFunction() {
+            var i=0;
+            var dr_image=document.getElementById("btn_cat");
+            var imgs=new Array("/img/iCat.jpg", "/img/cat1.jpg");
+            function imgsrc() {
+                i++;
+                dr_image.src=imgs[i];
+                }
+            }

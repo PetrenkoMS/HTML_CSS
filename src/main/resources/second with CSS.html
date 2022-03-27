@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Это second with CSS</title>
+        <script>
+            var i=0;
+            function btn_click_cat() {
+                var dr_cat=document.getElementById("btn_cat");
+                i++;
+                var imgs=new Array("../img/iCat.jpg", "../img/cat1.jpg", "../img/humor-cat.jpg");
+                if (i<imgs.length) {
+                    dr_cat.src=imgs[i];
+                } else {
+                    i=0;
+                    dr_cat.src=imgs[i];
+                }
+            }
+
+            function btn_find() {
+                var his_input=document.getElementById("h_input");
+                var his_output=document.getElementById("h_output");
+                var value_his_input=his_input.value;
+                his_output.innerHTML=value_his_input;
+
+                var hh_input=document.getElementById("h_input").value;
+                var ool_output=document.getElementById("ol_output");
+                var li_node=document.createElement("li");
+                var txt_node=createTextNode(hh_input);
+                li_node.appendChild(txt_node);
+                ool_output.appendChild(li_node);
+
+            }
+
+        </script>
+
+
+    </head>
+    <body>
+        <h1>Заголовок прост - Second with CSS</h1>
+        <h6>Все права защищены</h6>
+        <p> Очень важный текст <hr> Ну....  <br> честно <hr> Обратите внимание, далее идет <b> жирный шрифт</b> <i>а теперь курсив</i></p>
+        <p> Ну и новый абзац. Тут тоже не обошлось без сразу <b><s>Жирного и зачеркнутого шрифта.</s></b>И еще много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много, много текста, чтобы перешел на новую строчку сам </p>
+        <p> Непронумерованный список </p>
+        <ul class="num">
+            <li class="titleOfNum"> Первый-Первый</li>
+            <li class="titleOfNum"> А я второй</li>
+            <li class="titleOfNum"> Но мы же не пронумерованы.....</li>
+        </ul>
+        <p> А вот этот список пронумерован</p>
+        <ol class="num">
+            <li class="titleOfNum"> Список в списке? Почему нет.
+                <ul>
+                    <li class="titleOfLittleNum"> Снова точка</li>
+                    <li class="titleOfLittleNum"> Ага </li>
+                </ul>
+            </li>
+            <li class="titleOfNum"> А я своих пронумерую
+                <ol>
+                    <li class="titleOfLittleNum"> Первый</li>
+                    <li class="titleOfLittleNum"> <u>Второй, но я подчеркнут</u></li>
+                </ol>
+            </li>
+        </ol>
+    <div class="wrapper">
+        <div class="cat left_block">
+            <img id="btn_cat" class="foto" src="../img/iCat.jpg" alt="Котик ушел спать" size="20">
+            <button  type="button" onClick="btn_click_cat()" class="but1">  <p  class="textCat">Посмотреть на другого милого котика</p></button>
+        </div>
+        <div class="right_block">
+            <form id="form_1">
+                <input name="input" id="h_input" type="text" class="input_text" placeholder="Поиск по странице" />
+                <button type="button" onClick="btn_find()"> <img id="find_text" src="../img/find.png"> </button>
+            </form>
+            <p class="history"> История: </p>
+            <p id="h_output">  </p>
+            <ol id="ol_output">
+            </ol>
+        </div>
+    </div>
+    <div class="div2">
+        <p class="textDiv2">Вы посмотрели очень важную страницу, и котик этому рад!</p>
+        <p class="gold"> Посмотреть на других котиков можно <a href="https://yandex.ru/images/search?from=tabbar&text=коты"> здесь </a></p>
+        <p> В будущем будет почта: <a href="mailto:"> Ailurophilia.cat</a>. Но пока ее нет, не тыкать! (Хотя можно и тыкнуть, ее же нет)</p>
+
+    </div>
+    <script language="JavaScript">
+        qqalert("Привет, мир!");
+    </script>
+
+    </body>
+</html>
+
+<style>
+
+    body {
+    background-color: #E0F0F0;
+    }
+
+</style>
